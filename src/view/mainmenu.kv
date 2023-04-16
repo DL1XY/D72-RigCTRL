@@ -1,0 +1,25 @@
+#:kivy 2.1.0
+
+<MainMenu>: 
+    GridLayout:
+        cols:1
+        size: root.width, root.height
+
+        GridLayout:
+            cols:2
+
+            Label:
+                text: "Name: "
+
+            TextInput:
+                multinline:False
+
+            Label:
+                text: "Email: "
+
+            TextInput:
+                multiline:False
+
+        Button:
+            text:"Submit"
+            

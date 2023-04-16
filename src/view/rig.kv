@@ -1,0 +1,15 @@
+#:kivy 2.1.0
+
+<Rig>: 
+    md_bg_color: app.theme_cls.bg_darkest
+    MDBoxLayout:
+        orientation: 'vertical'
+
+        MDTopAppBar:
+            title: "Rig Configuration"
+            md_bg_color: app.theme_cls.primary_color
+            background_palette: 'Primary'
+            right_action_items: [["dots-vertical"]]
+        AnchorLayout:
+            id: data_layout
+            

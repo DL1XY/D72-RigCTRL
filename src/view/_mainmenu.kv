@@ -1,0 +1,32 @@
+#:kivy 2.1.0
+
+<MainMenu>: 
+    md_bg_color: app.theme_cls.bg_darkest
+    MDBoxLayout:
+        orientation: 'vertical'
+        
+        MDTopAppBar:
+            title: app.title
+            md_bg_color: app.theme_cls.primary_color
+            background_palette: 'Primary'
+            right_action_items: [["dots-vertical"]]
+       
+        MDScrollView:
+            MDList:
+                ThreeLineAvatarListItem:
+                    text: "ISS"
+                    secondary_text: "AOR: 2023-04-3 17:45:19"
+                    tertiary_text: "AOR: 2023-04-3 17:45:19"
+
+                    ImageLeftWidget:
+                        source: "assets/satellites/480px-ISS_emblem.png"
+
+                ThreeLineAvatarListItem:
+                    text: "AO-73 (FUNCUBE 1)"
+                    secondary_text: "AOR: 2023-04-3 17:45:19"
+                    tertiary_text: "AOR: 2023-04-3 17:45:19"
+
+                    ImageLeftWidget:
+                        source: "assets/satellites/funcube-1-ao-73-39444.jpeg"
+
+            

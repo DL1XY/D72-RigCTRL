@@ -1,0 +1,35 @@
+#:kivy 2.1.0
+
+<PolarView>:
+    md_bg_color: app.theme_cls.bg_darkest
+    MDBoxLayout:
+        orientation: 'vertical'
+
+        MDTopAppBar:
+            title: "Polar"
+            md_bg_color: app.theme_cls.primary_color
+            background_palette: 'Primary'
+            right_action_items: [["dots-vertical"]]
+                
+        MDRelativeLayout:
+            id: layout        
+            canvas:
+                Color:
+                    rgb: app.theme_cls.secondary_text_color
+                Line:
+                    circle: self.width/2,self.height/2,self.height/3
+                Line:
+                    circle: self.width/2,self.height/2,self.height/6
+                Line:
+                    circle: self.width/2,self.height/2,self.height/18
+                Line:
+                    points: (self.width/2-self.height/3-10, self.height/2, self.width/2+self.height/3+10, self.height/2)
+                Line:
+                    points: (self.width/2, self.height/2-self.height/3-10, self.width/2, self.height/2+self.height/3+10)   
+                Line:       
+                    bezier: root.rscale(self.size,1)
+            MDLabel:
+                id: sat_event_info
+                font_size: '14dp'                  
+                markup: True
+                text_color: app.theme_cls.secondary_text_color
