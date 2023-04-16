@@ -4,7 +4,7 @@ Program to control the Kenwood TH-D72 dual-band transceiver on PC or Android pho
 Also provides basic satellite prediction functionality based on user's location.
 
 ## Connect a PC to TH-D72 
-The following should work similar on Windows, just make sure the radio's USB-UART bridge is detected by Windows and change the serial device in the terminal configuration.
+This should work similar on Windows. Make sure the radio's USB-UART bridge is detected by Windows and change the serial device in the terminal configuration.
 
 ### How to connect TH-D72 in serial mode 
 * Make sure you have firmware v1.10 installed
