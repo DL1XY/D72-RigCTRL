@@ -46,7 +46,7 @@ cmd:MY NOCALL
 MYCALL   was NOCALL
 cmd:
 ```
-* Now you are in TNC mode and you can execute the commands as described in the manual.
+* Now you are in TNC mode and you can execute the commands described in the manual.
 
 #### Important
 * TH-D72 sends a questionmark followed by EH `?EH` in TNC mode if it doesn't know the command you sent
