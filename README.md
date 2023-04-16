@@ -1,6 +1,6 @@
 # D72-RigCTRL
 
-Program to control the Kenwood TH-D72 dual-band transceiver on (Linux) PC or Android phone. 
+Program to control the Kenwood TH-D72 dual-band transceiver on PC or Android phone via USB-OTG. 
 Also provides basic satellite prediction based on location.
 
 ## Connect a PC to TH-D72 
